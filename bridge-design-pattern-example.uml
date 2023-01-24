@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.example</OriginalElement>
+  <nodes>
+    <node x="416.1874999999999" y="241.0">org.example.Triangle</node>
+    <node x="800.625" y="380.0">org.example.VectorSquare</node>
+    <node x="1001.625" y="380.0">org.example.RasterSquare</node>
+    <node x="410.1874999999999" y="-15.0">org.example.Renderer</node>
+    <node x="707.4374999999999" y="241.0">org.example.Square</node>
+    <node x="624.4374999999999" y="89.0">org.example.Shape</node>
+    <node x="386.62499999999994" y="380.0">org.example.RasterTriangle</node>
+    <node x="97.64930555555549" y="380.0">org.example.Main</node>
+    <node x="592.625" y="380.0">org.example.VectorTriangle</node>
+    <node x="-74.0" y="100.5">org.example.RasterRenderer</node>
+    <node x="129.99999999999994" y="100.5">org.example.VectorRenderer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.example.RasterTriangle" target="org.example.Triangle" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="479.625" y="359.0" />
+      <point x="583.125" y="359.0" />
+      <point x="583.125" y="339.0" />
+      <point x="530.9374999999999" y="339.0" />
+      <point x="38.25" y="38.5" />
+    </edge>
+    <edge source="org.example.VectorTriangle" target="org.example.Triangle" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="686.625" y="359.0" />
+      <point x="583.125" y="359.0" />
+      <point x="583.125" y="339.0" />
+      <point x="530.9374999999999" y="339.0" />
+      <point x="38.25" y="38.5" />
+    </edge>
+    <edge source="org.example.Square" target="org.example.Shape" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="780.9374999999999" y="215.0" />
+      <point x="695.9374999999999" y="215.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="org.example.Triangle" target="org.example.Shape" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="492.6874999999999" y="215.0" />
+      <point x="695.9374999999999" y="215.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="org.example.RasterRenderer" target="org.example.Renderer" relationship="REALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="18.0" y="69.0" />
+      <point x="120.31249999999989" y="69.0" />
+      <point x="120.31249999999989" y="59.0" />
+      <point x="456.1874999999999" y="59.0" />
+      <point x="-46.0" y="27.0" />
+    </edge>
+    <edge source="org.example.Main" target="org.example.Square" relationship="CREATE">
+      <point x="0.0" y="-38.5" />
+      <point x="173.1493055555555" y="349.0" />
+      <point x="744.1874999999998" y="349.0" />
+      <point x="-36.75" y="38.5" />
+    </edge>
+    <edge source="org.example.Main" target="org.example.Triangle" relationship="CREATE">
+      <point x="0.0" y="-38.5" />
+      <point x="173.1493055555555" y="349.0" />
+      <point x="454.4375" y="349.0" />
+      <point x="-38.25" y="38.5" />
+    </edge>
+    <edge source="org.example.Main" target="org.example.RasterRenderer" relationship="CREATE">
+      <point x="0.0" y="-38.5" />
+      <point x="173.1493055555555" y="349.0" />
+      <point x="17.999999999999943" y="349.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="org.example.Shape" target="org.example.Renderer" relationship="TO_ONE">
+      <point x="0.0" y="-50.0" />
+      <point x="695.9374999999999" y="69.0" />
+      <point x="548.1874999999999" y="69.0" />
+      <point x="46.0" y="27.0" />
+    </edge>
+    <edge source="org.example.RasterSquare" target="org.example.Square" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="1091.625" y="359.0" />
+      <point x="991.375" y="359.0" />
+      <point x="991.375" y="349.0" />
+      <point x="817.6874999999999" y="349.0" />
+      <point x="36.75" y="38.5" />
+    </edge>
+    <edge source="org.example.Main" target="org.example.VectorRenderer" relationship="CREATE">
+      <point x="0.0" y="-38.5" />
+      <point x="173.1493055555555" y="349.0" />
+      <point x="221.99999999999994" y="349.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="org.example.VectorRenderer" target="org.example.Renderer" relationship="REALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="221.99999999999994" y="69.0" />
+      <point x="120.31249999999989" y="69.0" />
+      <point x="120.31249999999989" y="59.0" />
+      <point x="456.1874999999999" y="59.0" />
+      <point x="-46.0" y="27.0" />
+    </edge>
+    <edge source="org.example.VectorSquare" target="org.example.Square" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="891.125" y="359.0" />
+      <point x="991.375" y="359.0" />
+      <point x="991.375" y="349.0" />
+      <point x="817.6874999999999" y="349.0" />
+      <point x="36.75" y="38.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8565830721003135" showDependencies="true" x="564.0" y="231.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
